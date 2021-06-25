@@ -76,6 +76,12 @@ class RichTextEditor extends React.PureComponent {
     }
   };
 
+  handleLog = () => {
+    let textComponent = document.getElementById("Editor");
+
+    console.log(textComponent.innerHTML);
+  };
+
   render() {
     return (
       <>
@@ -103,6 +109,7 @@ class RichTextEditor extends React.PureComponent {
             {this.state.text}
           </TextArea>
         </div>
+        <button onClick={this.handleLog.bind(this)}>Log Content</button>
       </>
     );
   }
