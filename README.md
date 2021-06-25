@@ -1,2 +1,6 @@
 # Rich-text-editor
-Created with CodeSandbox
+
+Steps to run the app
+
+Run "npm install".
+Run "npm start"
