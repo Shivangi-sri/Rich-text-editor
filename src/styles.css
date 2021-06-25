@@ -1,0 +1,31 @@
+.btn {
+  margin: 15px 8px;
+}
+
+.text {
+  margin: 15px 8px;
+}
+
+.btn-container {
+  width: fit-content;
+  margin: 2px;
+  display: contents;
+}
+
+.text-editor {
+  height: 200px;
+  width: 77%;
+  border: 2px solid grey;
+}
+
+[contentEditable="true"]:empty:not(:focus):before {
+  content: attr(data-text);
+}
+
+.display-none {
+  display: none;
+}
+
+.selected-bold {
+  font-weight: bold;
+}
